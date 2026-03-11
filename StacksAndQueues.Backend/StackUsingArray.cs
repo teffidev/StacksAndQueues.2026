@@ -17,7 +17,7 @@
             {
                 throw new InvalidOperationException("Stack is full.");
             }
-            _stack[_top++] = item;
+            _stack[++_top] = item;
         }
 
         public T Pop()

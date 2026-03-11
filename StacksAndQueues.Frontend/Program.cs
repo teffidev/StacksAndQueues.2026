@@ -2,7 +2,13 @@
 
 try
 {
-    var stack = new StackUsingArray<int>(5);
+    var stack = new StackUsingArray<string>(5);
+    stack.Push("Perro");
+    stack.Push("Gato");
+    stack.Push("Pajaro");
+    stack.Push("Pez");
+    stack.Push("Conejo");
+    Console.WriteLine(stack.Pop());
 }
 catch (Exception ex)
 {
