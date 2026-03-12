@@ -13,7 +13,7 @@
 
         public void Push(T item)
         {
-            if (_top == -1)
+            if (_top == _stack.Length -1)
             {
                 throw new InvalidOperationException("Stack is full.");
             }
